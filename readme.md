@@ -1,3 +1,2 @@
 go-bindata data
-$env:GOARCH="386"
-go build -ldflags -H=windowsgui -o fakeserver.exe
+env GOOS="windows" GOARCH="amd" go build -ldflags -H=windowsgui -o fakeserver.exe
